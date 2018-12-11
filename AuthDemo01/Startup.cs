@@ -1,8 +1,6 @@
-﻿using Microsoft.Owin;
-using Owin;
+﻿using Owin;
 
-[assembly: OwinStartupAttribute(typeof(AuthDemo01.Startup))]
-namespace AuthDemo01
+namespace IdentitySample
 {
     public partial class Startup
     {
