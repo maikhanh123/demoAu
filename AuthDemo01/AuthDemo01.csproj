@@ -192,6 +192,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201812110148460_InitialCreate.cs" />
+    <Compile Include="Migrations\201812110148460_InitialCreate.Designer.cs">
+      <DependentUpon>201812110148460_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812110822112_AddShippingAddressToUserTable.cs" />
+    <Compile Include="Migrations\201812110822112_AddShippingAddressToUserTable.Designer.cs">
+      <DependentUpon>201812110822112_AddShippingAddressToUserTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812110841029_ChangeNameTableIdentity.cs" />
+    <Compile Include="Migrations\201812110841029_ChangeNameTableIdentity.Designer.cs">
+      <DependentUpon>201812110841029_ChangeNameTableIdentity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -271,6 +284,17 @@
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201812110148460_InitialCreate.resx">
+      <DependentUpon>201812110148460_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812110822112_AddShippingAddressToUserTable.resx">
+      <DependentUpon>201812110822112_AddShippingAddressToUserTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812110841029_ChangeNameTableIdentity.resx">
+      <DependentUpon>201812110841029_ChangeNameTableIdentity.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -289,7 +313,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>49994</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:49994/</IISUrl>
+          <IISUrl>http://localhost:51066/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

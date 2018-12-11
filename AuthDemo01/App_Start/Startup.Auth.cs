@@ -1,11 +1,10 @@
-﻿using System;
+﻿using AuthDemo01.Models;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
-using Microsoft.Owin.Security.Google;
 using Owin;
-using AuthDemo01.Models;
+using System;
 
 namespace AuthDemo01
 {
@@ -54,9 +53,9 @@ namespace AuthDemo01
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "537021510080616",
+               appSecret: "0c4b64b5735ebf66a8574af650da5ca6");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
